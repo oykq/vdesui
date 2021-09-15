@@ -73,11 +73,12 @@ export default defineComponent({
       default: ''
     },
 
+    //TODO
     showError: {
       type: Boolean,
       default: false
     },
-
+      
     prop: {
       // 校验的属性，给父元素form使用
       type: String,

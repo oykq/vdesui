@@ -9,12 +9,26 @@ Cell 支持添加任意类型的组件作为自己的子组件，但是请不要
 
 
 #### 属性
-
-- insert-animation string, cell 的插入动画。当前只支持 `none` 和 `default`。
-
-- delete-animation string, cell 的删除动画。当前只支持 `none` 和 `default`。
-
-- recycle boolean, 默认值 true。这个属性控制这个 Cell 的 view 和子 views 是否在列表滚动时进行回收，在 iOS 上通常必须指定为 true （因为默认为 true，所以一般不需要写这个属性），如果设置为 false，列表滚动时，页面会占用非常高的内存。Android上默认是true，设置为false可以防止Image和Text上数据重新绑定。
+| 属性                   | 类型        | 默认值       | 说明                                                                                                                                                           |
+| ---------------------- | ----------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|extClass|String|default||
+|icon|String|default|矢量图标库|
+|title|String|default|和icon二选一，都是放在cell_hd里面|
+|hover|Boolean|false|选择鼠标指针浮动在其上的元素，并设置其样式|
+|link|Boolean|false|选择器设置指向未被访问页面的链接的样式|
+|value|String|default||
+|showError|Boolean|false|显示错误|
+|prop|String|default|校验的属性，给父元素form使用|
+|footer|String|default|文档中的页脚部分|
+|inline|Boolean|true|左右布局样式还是上下布局|
+|iconClass|String|default|矢量图标库类|
+|bodyClass|String|default|页面主体类|
+|url|String|default|在link为true的时候有效，表示navigator的跳转url|
+|footerClass|String|default||
+|hasHeader|Boolean|true||
+|hasFooter|Boolean|true||
+|hasBody|Boolean|true||
+|extHoverClass|String|default|提供给需要定制 hover-class 的场景，要求 hover 为 false|
 
 #### 样式
 

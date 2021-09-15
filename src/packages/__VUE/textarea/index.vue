@@ -48,7 +48,6 @@ const props = extend({}, FiledProps, {
 export default defineComponent({
   name: 'vdes-textarea',
   props,
-
   emits: [
     'focus',
     'blur',
