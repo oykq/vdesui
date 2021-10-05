@@ -10,12 +10,14 @@ import textarea from './__VUE/textarea/index.vue';
 import pickerView from './__VUE/picker-view/index.vue';
 import pickerViewColumn from './__VUE/picker-view-column/index.vue';
 import picker from './__VUE/picker/index.vue';
+import radio from './__VUE/radio/index.vue';
+import radioGroup from './__VUE/radio-group/index.vue';
 import view from './__VUE/view/index.vue';
 import Dialog from './__VUE/dialog/index.vue';
 import Image from './__VUE/image/index.vue';
 
 function install(app: App) {
-    const packages = [events,button,form,input,Switch,cell,cells,textarea,pickerView,pickerViewColumn,picker,view,Dialog,Image];
+    const packages = [events,button,form,input,Switch,cell,cells,textarea,pickerView,pickerViewColumn,picker,radio,radioGroup,view,Dialog,Image];
     packages.forEach((item:any) => {
       if (item.install) {
         app.use(item);
@@ -24,5 +26,5 @@ function install(app: App) {
       }
     });
   }
-export { install, events,button,form,input,Switch,cell,cells,textarea,pickerView,pickerViewColumn,picker,view,Dialog,Image  };
+export { install, events,button,form,input,Switch,cell,cells,textarea,pickerView,pickerViewColumn,picker,radio,radioGroup,view,Dialog,Image  };
 export default { install, version:'1.0.0'};

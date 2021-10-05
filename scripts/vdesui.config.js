@@ -111,6 +111,14 @@ var vdesui_config_default = defineConfig({
             {
               name: "picker",
               desc: "\u4ECE\u5E95\u90E8\u5F39\u8D77\u7684\u6EDA\u52A8\u9009\u62E9\u5668"
+            },
+            {
+              name: "radio",
+              desc: "\u5355\u9009\u9879\u76EE"
+            },
+            {
+              name: "radio-group",
+              desc: "\u5355\u9009\u7EC4"
             }
           ]
         },

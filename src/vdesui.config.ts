@@ -95,6 +95,14 @@ export default defineConfig({
             {
               name: 'picker',
               desc: '从底部弹起的滚动选择器'
+            },
+            {
+              name: 'radio',
+              desc : '单选项目'
+            },
+            {
+              name: 'radio-group',
+              desc : '单选组'
             }
           ]
         },

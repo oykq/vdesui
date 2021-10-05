@@ -16,7 +16,8 @@
 |@pickstart|eventhandle||当滚动选择开始时候触发事件|微信小程序2.3.1、快手小程序|
 |@pickend|eventhandle||当滚动选择结束时候触发事件|微信小程序2.3.1、快手小程序|
 
-**注意：**其中只可放置 `<picker-view-column/>` 组件，其他节点不会显示。
+**注意：**其中只可放置 `<picker-view-column/>` 组件，其他节点不会显示。滚动时在iOS自带振动反馈，可在系统设置 -> 声音与触感 -> 系统触感反馈中关闭
+
 
 #### picker-view-column
 
